@@ -1,0 +1,98 @@
+body {
+	font-family: Arial, sans-serif;
+  color: #101820FF;
+}
+
+h1 {
+	text-align: center;
+}
+
+#location-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#location-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+#city-search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+label {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+input[type="text"] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+  font-size: 16px;
+}
+
+#result {
+	margin-top: 20px;
+  font-size: 20px;
+	text-align: center;
+  color: #101820FF;
+}
+
+p {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+body {
+    background: url("clima.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .clouds {
+    background: url("clima.jpeg") no-repeat center center fixed;
+  }
+  
+  .rain {
+    background: url("Raining.jpeg") no-repeat center center fixed;
+  }
+  
+  .snow {
+    background: url("neve.jpeg") no-repeat center center fixed;
+  }
+  
+  .clear {
+    background: url("Sol.jpeg") no-repeat center center fixed;
+  }
+  
+  .thunderstorm {
+    background: url("Tempestade.jpeg") no-repeat center center fixed;
+  }
+  
+  .mist {
+    background: url("Mist.jpeg") no-repeat center center fixed;
+  } 
+
