@@ -1,98 +1,86 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
-	font-family: Arial, sans-serif;
-  color: #101820FF;
+  margin: 0;
+  padding: 0; 
 }
 
-h1 {
-	text-align: center;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #444;
 }
 
-#location-btn {
-  margin: 10px;
+.card {
+  position: relative;
+  background: #333;
+  width: 400px;
+  height: 75vh;
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+}
+
+.card__image-container {
+  height: 25%;
+  position: relative;
+  /* background: red; */
+}
+
+img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__button-content {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__button_city {
   padding: 10px;
   background-color: #4CAF50;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  margin-left: 10px;
   cursor: pointer;
-}
-
-#location-btn:hover {
-  background-color: #3e8e41;
-}
-
-
-#city-search {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-label {
-	font-weight: bold;
-	margin-right: 10px;
-}
-
-input[type="text"] {
-	padding: 5px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-
-button {
-	padding: 10px;
-	background-color: #4CAF50;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	margin-left: 10px;
-	cursor: pointer;
   font-size: 16px;
 }
 
-#result {
-	margin-top: 20px;
-  font-size: 20px;
-	text-align: center;
-  color: #101820FF;
+.card__button_loc {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-p {
-	margin-bottom: 10px;
-	font-size: 18px;
+.card__input-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-body {
-    background: url("clima.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .clouds {
-    background: url("clima.jpeg") no-repeat center center fixed;
-  }
-  
-  .rain {
-    background: url("Raining.jpeg") no-repeat center center fixed;
-  }
-  
-  .snow {
-    background: url("neve.jpeg") no-repeat center center fixed;
-  }
-  
-  .clear {
-    background: url("Sol.jpeg") no-repeat center center fixed;
-  }
-  
-  .thunderstorm {
-    background: url("Tempestade.jpeg") no-repeat center center fixed;
-  }
-  
-  .mist {
-    background: url("Mist.jpeg") no-repeat center center fixed;
-  } 
-
+.card__input {
+  border-radius: 5px;
+  border: none;
+  background-color: #aaa;
+  height: 25px;
+}
